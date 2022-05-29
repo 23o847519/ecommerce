@@ -1,22 +1,37 @@
-import React from 'react'
 
-const Home = () => {
-  return (
-    <>
-      HeroBanner
+import React from 'react';
 
-      <div className="products-heading">
-        <h2>BFAC Coin and mintage</h2>
-        <p>All Your Waifu Coin needs</p>
+import { Product, FooterBanner, HeroBanner } from '../components';
 
-        <div className="products-container">
-          {['Product 1', 'Product 2'].map(
-          (product) => product)}
-        </div>
-      </div>
-      Footer
-    </>
-  )
-}
+const Home = () => (
+  <div>
+    <no banner/>
 
-export default Home
+    <div className="products-heading">
+      <h2>COINS</h2>
+    </div>
+
+    <div className="products-container">
+    {['Product 1', ' Product 2', 'Product 3', ' Product 4', 'Product 5', ' Product 6'].map(      
+    (product) => product)}     
+    </div>
+
+
+
+
+
+    <div className="products-heading">
+      <h2>PRINTS</h2>
+    </div>
+
+    <div className="products-container">
+    {['Product 1', ' Product 2', 'Product 3', ' Product 4', 'Product 5', ' Product 6'].map(      
+    (product) => product)}     
+    </div>
+
+
+    <no banner/>
+  </div>
+);
+
+export default Home;
