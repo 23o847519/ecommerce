@@ -1,9 +1,22 @@
 import React from 'react'
 
-const index = () => {
+const Home = () => {
   return (
-    <div>index</div>
+    <>
+      HeroBanner
+
+      <div>
+        <h2>Best Selling Products</h2>
+        <p>Speakers of many variations</p>
+
+        <div>
+          {['Product 1', 'Product 2'].map(
+          (product) => product)}
+        </div>
+      </div>
+      Footer
+    </>
   )
 }
 
-export default index
+export default Home
